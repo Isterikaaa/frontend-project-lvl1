@@ -24,8 +24,7 @@ steps:
 
 # Runs a single command using the runners shell
 - run: |
-  make install
-- name: 
-    Run linter
+    make install
+- name: Run linter
   run: |
     make lint
