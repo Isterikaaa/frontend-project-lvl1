@@ -1,6 +1,6 @@
 import name from '../src/cli.js';
 
-const readlineSync = require("readline-sync");
+import readlineSync from 'readline-sync';
 
 const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min) + min);
