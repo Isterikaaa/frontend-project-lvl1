@@ -3,13 +3,14 @@
   "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Isterikaaa/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Isterikaaa/frontend-project-lvl1/actions)",
-  "main": "index.js",
+  "main": "src/even.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-cals": "bin/brain-calc.js"
   },
   "repository": {
     "type": "git",
