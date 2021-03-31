@@ -1,6 +1,7 @@
-import greeting from './src/cli.js';
-
 import readlineSync from 'readline-sync';
+import greeting from './cli.js';
+
+
 
 
 const randomNumber = (min, max) => {
