@@ -12,16 +12,16 @@ const findingARandomSign = () => {
   return sign[randomNumber(0, 2)];
 };
 
-    const calculation = (num1, sign, num2) => {
-    switch (sign) {
-    case '-':
-        return num1 - num2;
-      break;
-      case '+':
+const calculation = (num1, sign, num2) => {
+  switch (sign) {
+  case '-':
+    return num1 - num2;
+    break;
+    case '+':
       return num1 + num2;
-  break;
+      break;
     case '*':
-  return num1 * num2;
+      return num1 * num2;
   break;
   }
 };
@@ -39,11 +39,11 @@ const playRounds = () => {
     if (correctAnswer === playerAnswer) {
       console.log('Correct!');
       currentAnswers += 1;
-        } else {
-        console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-        console.log(`Let's try again, ${name}!`);
-        return;
-        } 
-    } console.log(`Congratulations, ${name}!`);
-  };
+    } else {
+      console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    } 
+  } console.log(`Congratulations, ${name}!`);
+};
 export default playRounds;
