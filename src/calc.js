@@ -14,15 +14,15 @@ const findingARandomSign = () => {
 
 const calculation = (num1, sign, num2) => {
   switch (sign) {
-  case '-':
-    return num1 - num2;
-    break;
+    case '-':
+      return num1 - num2;
+      break;
     case '+':
       return num1 + num2;
       break;
     case '*':
       return num1 * num2;
-  break;
+      break;
   }
 };
 
@@ -46,4 +46,5 @@ const playRounds = () => {
     } 
   } console.log(`Congratulations, ${name}!`);
 };
+
 export default playRounds;

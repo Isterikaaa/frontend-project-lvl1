@@ -1,15 +1,11 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
 
-
-
-
 const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min) + min);
 };
 
 const isEvenNumber = (num) => (num % 2 === 0) ? 'yes' : 'no';
-
 
 const playRounds = () => {
     const name = greeting();
