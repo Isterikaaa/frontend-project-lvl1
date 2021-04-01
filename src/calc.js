@@ -1,11 +1,6 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
-
-const randomNumber = (min, max) => {
-  const newMin = Math.ceil(min);
-  const newMax = Math.floor(max);
-  return Math.floor(Math.random() * (newMax - newMin + 1)) + newMin;
-};
+import randomNumber from './randomNumber.js';
 
 const findingARandomSign = () => {
   const sign = ['-', '+', '*'];
@@ -13,17 +8,21 @@ const findingARandomSign = () => {
 };
 
 const calculation = (num1, sign, num2) => {
+  let result;
   switch (sign) {
     case '-':
-      return num1 - num2;
+      result = num1 - num2;
       break;
     case '+':
-      return num1 + num2;
+      result = num1 + num2;
       break;
     case '*':
-      return num1 * num2;
+      result = num1 * num2;
       break;
+    default:
+      return null;
   }
+  return result;
 };
 
 const playRounds = () => {
@@ -43,7 +42,7 @@ const playRounds = () => {
       console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
       return;
-    } 
+    }
   } console.log(`Congratulations, ${name}!`);
 };
 
