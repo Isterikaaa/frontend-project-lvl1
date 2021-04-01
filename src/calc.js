@@ -12,13 +12,13 @@ const findingARandomSign = () => {
   return sign[randomNumber(0, 2)];
 };
 
-const calculation = (num1, sign, num2) => {
-  switch (sign) {
+    const calculation = (num1, sign, num2) => {
+    switch (sign) {
     case '-':
-  return num1 - num2;
-  break;
-    case '+':
-  return num1 + num2;
+        return num1 - num2;
+      break;
+      case '+':
+      return num1 + num2;
   break;
     case '*':
   return num1 * num2;
