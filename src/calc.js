@@ -5,12 +5,12 @@ const randomNumber = (min, max) => {
   const newMin = Math.ceil(min);
   const newMax = Math.floor(max);
   return Math.floor(Math.random() * (newMax - newMin + 1)) + newMin;
-  };
+};
 
 const findingARandomSign = () => {
   const sign = ['-', '+', '*'];
   return sign[randomNumber(0, 2)];
-  };
+};
 
 const calculation = (num1, sign, num2) => {
   switch (sign) {
@@ -23,8 +23,8 @@ const calculation = (num1, sign, num2) => {
     case '*':
     return num1 * num2;
     break;
-    }
-  };
+  }
+};
 
 const playRounds = () => {
   const name = greeting();
@@ -39,7 +39,7 @@ const playRounds = () => {
     if (correctAnswer === playerAnswer) {
       console.log('Correct!');
       currentAnswers += 1;
-      } else {
+        } else {
         console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
         console.log(`Let's try again, ${name}!`);
         return;
