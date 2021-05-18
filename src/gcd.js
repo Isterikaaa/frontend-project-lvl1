@@ -3,11 +3,14 @@ import greeting from './cli.js';
 import randomNumber from './randomNumber.js';
 
 const nod = (num1, num2) => {
+  let result = 0;
   for (let i = num1; i >= 1; i -= 1) {
     if (num1 % i === 0 && num2 % i === 0) {
+      result = i;
       return i;
     }
   }
+  return result;
 };
 
 const playRounds = () => {
